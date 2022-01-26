@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layoutDescription="@xml/board_scene">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FBB2B2"
+        android:gravity="center"
+        android:text="guest book"
+        android:textColor="#FFFFFF" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        app:srcCompat="@drawable/letter" />
+
+
+    <ListView
+        android:id="@+id/ListView"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:background="#FFFFFF" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="400dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/context_text"
+            android:layout_width="357dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/edit_memo"
+            android:hint="  축하해주세요"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom|top"
+            android:background="@drawable/circle"
+            android:gravity="center"
+            android:text="+"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            app:backgroundTint="#FBD0A2" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/copyright3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FBB2B2"
+        android:gravity="center"
+        android:text="Copyright © YOUGOD"
+        android:textColor="#FFFFFF" />
+</LinearLayout>

@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layoutDescription="@xml/board_scene">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FBB2B2"
+                android:gravity="center"
+                android:text="invitation"
+                android:textColor="#FFFFFF"
+                android:textFontWeight="1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="\n 비전 \n"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="\n 그리고 \n"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="\n 완다 \n"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="match_parent"
+                android:layout_height="700dp"
+                app:srcCompat="@drawable/wedding6" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="\n\n\n우리는 매일 우리의 삶을 여행합니다.\n우리가 할 수 있는건, 이 멋진 여행을 즐기기 위해\n매일 최선을 다하는 것입니다.\n\n -영화 '어바웃타임'- \n\n\n ───────✧❁✧─────── \n"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/calendarView"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:text="\n2022년 10월 16일"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="match_parent"
+                android:layout_height="463dp"
+                app:srcCompat="@drawable/calendar" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="오시는 길 "
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    app:srcCompat="@drawable/map" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="290dp"
+                android:layout_height="151dp"
+                android:layout_gravity="center"
+                android:layout_margin="50dp"
+                android:background="@drawable/square"
+                android:gravity="center"
+                android:text="서울신라호텔 영빈관\n주소: 서울특별시 중구 장충동2가 202 " />
+
+            <Button
+                android:id="@+id/btn_map"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:background="@drawable/roundshape"
+                android:text="자세히 보기"
+                app:backgroundTint="#FBD0A2" />
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="\n ───────✧❁✧─────── \n" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:id="@+id/frame"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/img1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/wedding"
+                        android:visibility="invisible" />
+
+                    <ImageView
+                        android:id="@+id/img2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/wedding2"
+                        android:visibility="invisible" />
+
+                    <ImageView
+                        android:id="@+id/img3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/wedding3"
+                        android:visibility="invisible" />
+
+                    <ImageView
+                        android:id="@+id/img4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/wedding4"
+                        android:visibility="invisible" />
+
+                    <ImageView
+                        android:id="@+id/img5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/wedding5"
+                        android:visibility="invisible" />
+
+                    <ImageView
+                        android:id="@+id/img6"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/wedding6"
+                        android:visibility="invisible" />
+
+                    <ImageView
+                        android:id="@+id/img7"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/wedding7"
+                        android:visibility="invisible" />
+
+                    <ImageView
+                        android:id="@+id/img8"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/wedding8"
+                        android:visibility="invisible" />
+
+                    <ImageView
+                        android:id="@+id/img9"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/wedding9"
+                        android:visibility="invisible" />
+
+                    <ImageView
+                        android:id="@+id/img10"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/wedding10"
+                        android:visibility="invisible" />
+
+                    <ImageView
+                        android:id="@+id/img11"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/wedding11"
+                        android:visibility="invisible" />
+
+                </FrameLayout>
+
+            </LinearLayout>
+            <![CDATA[
+
+            ]                android:textFontWeight="1"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            ]]>
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/Prev"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:onClick="onClickPrev"
+                    app:srcCompat="@drawable/left" />
+
+                <ImageView
+                    android:id="@+id/Next"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:onClick="onClickNext"
+                    app:srcCompat="@drawable/right" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="\n\n\n ───────✧❁✧───────\n\n \n" />
+
+
+            <TextView
+                android:id="@+id/textView25"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="\n\n 신랑 &amp; 신부에게 마음 전하기"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView26"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="축복의 의미로 연락을 남겨주세요\n\n"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="신랑\t\t\t비전\t\t\t"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/call1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/circle"
+                    android:gravity="center"
+                    android:text="📞"
+                    android:textColor="#FFFFFF"
+                    android:textSize="10sp"
+                    app:backgroundTint="#FBB2B2" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="신부\t\t\t완다\t\t\t"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/call2"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/circle"
+                    android:gravity="center"
+                    android:text="📞"
+                    android:textColor="#FFFFFF"
+                    android:textSize="10sp"
+                    app:backgroundTint="#FBB2B2" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="\n\n\n\n" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="\n\n 신랑 &amp; 신부에게 마음 전하기"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="축복의 의미로 메시지를 남겨주세요\n\n"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/btn_go"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:background="@drawable/roundshape"
+                android:gravity="center"
+                android:text="guest book"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                app:backgroundTint="#FBD0A2" />
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="\n\n\n\n" />
+
+            <TextView
+                android:id="@+id/copyright3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="#FBB2B2"
+                android:gravity="center"
+                android:text="Copyright © YOUGOD"
+                android:textColor="#FFFFFF"
+                android:textFontWeight="1" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
